@@ -48,10 +48,10 @@ public static class MainController
             if (modePort != null)
                 TryReleaseTcpPort((ushort)modePort, portName);
 
-            if (Server is Socks5Server socks5 && (!socks5.Auth() || ModeController.Features.HasFlag(ModeFeature.SupportSocks5Auth)))
-            {
-                Socks5Server = socks5;
-            }
+            //if (Server is Socks5Server socks5 && (!socks5.Auth() || ModeController.Features.HasFlag(ModeFeature.SupportSocks5Auth)))
+            //{
+            //    Socks5Server = socks5;
+            //}
             else
             {
                 // Start Server Controller to get a local socks5 server
